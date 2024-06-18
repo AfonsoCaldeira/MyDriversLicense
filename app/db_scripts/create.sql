@@ -13,6 +13,7 @@ CREATE Table aluno (
     aluno_email VARCHAR(70) NOT NULL,
     aluno_pass VARCHAR(200) NOT NULL,
     aluno_token VARCHAR(200),
+    aluno_escola VARCHAR(70) NOT NULL,
     categoria_id INTEGER REFERENCES categoria(categoria_id) ON DELETE CASCADE ON UPDATE CASCADE,
     admin_id INTEGER REFERENCES administrador(admin_id) ON DELETE CASCADE ON UPDATE CASCADE,
     UNIQUE (aluno_email)

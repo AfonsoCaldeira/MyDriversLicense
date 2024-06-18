@@ -1,5 +1,5 @@
 const pool = require("../config/database");
-const auth = require("../config/user");
+const auth = require("../config/utils");
 const bcrypt = require("bcrypt");
 
 function dbAdminToAdmin(dbAdmin) {
